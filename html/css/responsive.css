@@ -1,0 +1,242 @@
+/* Nav */
+
+@media (max-width: 1440px) {
+    .navbar-nav {
+        background: linear-gradient(90deg, #2c3e50, #34495e);
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        border-radius: 8px;
+        margin-top: 1rem;
+    }
+
+    .navbar-nav .nav-link {
+        padding: 1rem;
+        text-align: center;
+        font-size: 0.9rem;
+    }
+
+    .navbar-marca h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    .navbar-nav .nav-link {
+        font-size: 0.8rem;
+    }
+
+    .navbar-marca h1 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .navbar-nav .nav-link {
+        font-size: 0.7rem;
+    }
+
+    .navbar-marca h1 {
+        font-size: 1rem;
+    }
+
+    .navbar-collapse {
+        display: none; /* Hide the menu initially */
+    }
+
+    .navbar-toggler {
+        display: block; /* Show the button */
+    }
+
+    .navbar-collapse.show {
+        display: block; /* Show the menu when toggled */
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-nav .nav-link {
+        font-size: 0.65rem;
+    }
+
+    .navbar-marca h1 {
+        font-size: 0.9rem;
+    }
+}
+
+/* banner */
+
+@media (max-width: 2000px) {
+    .banner {
+        height: 38em;
+    }
+}
+
+@media (max-width: 1600px) {
+    .banner {
+        height: 30em;
+    }
+}
+
+@media (max-width: 1400px) {
+    .banner {
+        height: 28em;
+    }
+}
+
+@media (max-width: 1100px) {
+    .banner {
+        height: 26em;
+    }
+}
+
+@media (max-width: 900px) {
+    .banner {
+        height: 24em;
+    }
+}
+
+@media (max-width: 868px) {
+    .banner {
+        height: 20em;
+    }
+}
+
+@media (max-width: 700px) {
+    .banner {
+        height: 18em;
+    }
+}
+
+@media (max-width: 650px) {
+    .banner {
+        height: 16em;
+    }
+}
+
+@media (max-width: 550px) {
+    .banner {
+        height: 14em;
+    }
+}
+
+@media (max-width: 460px) {
+    .banner {
+        height: 12em;
+    }
+}
+
+@media (max-width: 400px) {
+    .banner {
+        height: 10em;
+    }
+}
+
+@media (max-width: 350px) {
+    .banner {
+        height: 8em;
+    }
+}
+
+/* Main */
+
+@media (max-width: 1200px) {
+    .main .row {
+        gap: 1.5rem;
+    }
+
+    .main .box .inner h3 {
+        font-size: 1.4rem;
+    }
+
+    .main .box .inner p {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .main .row {
+        gap: 1rem;
+    }
+
+    .main .box .inner h3 {
+        font-size: 1.25rem;
+    }
+
+    .main .box .inner p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .main .row {
+        gap: 1rem;
+        flex-direction: column;
+    }
+
+    .main .box .inner h3 {
+        font-size: 1.1rem;
+    }
+
+    .main .box .inner p {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .main .box .inner h3 {
+        font-size: 1rem;
+    }
+
+    .main .box .inner p {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .col-6.col-12-narrower {
+        width: 100%;
+    }
+}
+
+/* banner ayudanos */
+
+@media (max-width: 768px) {
+    .banner-ayudanos h2 {
+        font-size: 1.5rem; /* Adjust heading size for smaller screens */
+    }
+
+    .banner-ayudanos .button {
+        font-size: 0.9rem; /* Adjust button size */
+        padding: 0.7rem 1.2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .banner-ayudanos h2 {
+        font-size: 1.2rem; /* Further adjust heading size for very small screens */
+    }
+
+    .banner-ayudanos .button {
+        font-size: 0.8rem; /* Further adjust button size */
+        padding: 0.6rem 1rem;
+    }
+}
+
+/* Footer */
+
+@media (max-width: 768px) {
+    .footer-logo h2 {
+        font-size: 1.5rem;
+    }
+
+    .footer-links a {
+        font-size: 0.9rem;
+    }
+
+    .footer-social a img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .footer-info {
+        font-size: 0.8rem;
+    }
+}
