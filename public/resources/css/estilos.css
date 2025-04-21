@@ -1,6 +1,7 @@
 body {
   overflow-x: hidden;
   max-width: 100%;
+  background-color: #eeeeee;
 }
 
 * {
@@ -11,6 +12,12 @@ body {
 }
 html {
   font-size: 16px;
+}
+
+.logo{
+  height: auto;
+  width: 7%;
+  
 }
 
 html,
@@ -200,7 +207,7 @@ a {
 
 .banner-ayudanos .button {
     display: inline-block;
-    background-color: #f1c40f;
+    background-color: #e4b90d;
     color: #000;
     padding: 0.75rem 1.5rem;
     border-radius: 5px;

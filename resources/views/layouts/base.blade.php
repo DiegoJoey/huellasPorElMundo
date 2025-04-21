@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Huellas por el mundo</title>
+        <link rel="icon" type="image/png" href="{{ asset('resources/img/paws.png') }}">
         <!-- Bootstrap CSS -->
         <!-- Bootstrap Icons CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
@@ -12,6 +13,7 @@
             rel="stylesheet">
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 
         <link rel="stylesheet" href="{{ asset('resources/css/estilos.css') }}">
         <link rel="stylesheet" href="{{ asset('resources/css/responsive.css') }}">
@@ -24,9 +26,9 @@
         <header>
             <div class="container-fluid p-0 nav-bar">
                 <nav class="navbar navbar-expand-lg navbar-dark ">
-                    <a href="index.html" class="navbar-marca">
+                    <a href="/" class="navbar-marca">
                         <h1
-                            class="m-0 display-4 font-weight-bold text-uppercase text-white">Huellas
+                            class="m-0 display-4 font-weight-bold text-uppercase text-white"> <img src="{{ asset('resources/img/paw.jpg') }}" class="logo" /> Huellas
                             por el mundo</h1>
                     </a>
                     <button type="button" class="navbar-toggler"
@@ -44,6 +46,8 @@
                             <a href="/ayudanos" class="nav-item nav-link ">Ayudanos</a>
                             <a href="/adopciones" class="nav-item nav-link ">Adopciones</a>
                             <a href="/contacto" class="nav-item nav-link ">Contacto</a>
+                            <a href="/login" class="nav-item nav-link ">login</a>
+                            <a href="/register" class="nav-item nav-link ">Register</a>
                         </div>
                     </div>
                 </nav>
