@@ -1,81 +1,82 @@
 * {
     box-sizing: border-box;
-  }
-  
-  body, html {
+}
+
+body,
+html {
     height: 100%;
     margin: 0;
-    font-family: 'Segoe UI', sans-serif;
+    font-family: "Segoe UI", sans-serif;
     background-color: #f4f4f4;
-  }
-  
-  .center-wrapper {
+}
+
+.center-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px;
     height: 100vh;
-  }
+}
 
-  .text-register{
+.text-register {
     font-weight: bold;
     font-size: 26px;
     text-align: center;
-  }
-  
-  .form {
+}
+
+.form {
     background: white;
     padding: 30px;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 500px;
-  }
-  
-  .contact {
+}
+
+.contact {
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 20px;
     text-align: center;
-  }
-  
-  .flex-column {
+}
+
+.flex-column {
     display: flex;
     flex-direction: column;
     margin-top: 10px;
-  }
-  
-  .inputForm {
+}
+
+.inputForm {
     display: flex;
     align-items: center;
     gap: 10px;
     margin-bottom: 15px;
-  }
-  
-  .inputForm input,
-  .inputForm textarea {
+}
+
+.inputForm input,
+.inputForm textarea {
     flex: 1;
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 8px;
     font-size: 14px;
     width: 100%;
-  }
-  
-  .inputForm textarea {
+}
+
+.inputForm textarea {
     resize: vertical;
     min-height: 100px;
-  }
-  
-  .span {
+}
+
+.span {
     font-size: 14px;
     margin-left: 5px;
     color: #2d79f3;
     font-weight: 500;
     cursor: pointer;
-  }
-  
-  .button-submit {
+}
+
+.button-submit {
     margin: 20px 0 10px 0;
     background-color: #151717;
     border: none;
@@ -86,14 +87,20 @@
     height: 50px;
     width: 100%;
     cursor: pointer;
-  }
-  
-  .p {
+}
+
+.p {
     text-align: center;
     color: black;
     font-size: 14px;
     margin: 5px 0;
-  }
-  
-  
-  
+}
+
+.error-messages {
+  margin-top: 5px;
+  font-size: 0.9rem;
+}
+.error-messages p {
+  margin: 0;
+  color: red;
+}
