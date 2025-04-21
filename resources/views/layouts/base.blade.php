@@ -82,6 +82,6 @@
             </div>
         </footer>
 
-        @stack('script')
+        @stack('scripts')
     </body>
 </html>
