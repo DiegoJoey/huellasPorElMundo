@@ -64,11 +64,11 @@
                     <h2>Huellas por el Mundo</h2>
                 </div>
                 <div class="footer-links">
-                    <a href="#">Inicio</a>
-                    <a href="#">Sobre Nosotros</a>
-                    <a href="#">Adopciones</a>
-                    <a href="#">Ayúdanos</a>
-                    <a href="#">Contacto</a>
+                    <a href="/">Inicio</a>
+                    <a href="/sobreNosotros">Sobre Nosotros</a>
+                    <a href="/adopciones">Adopciones</a>
+                    <a href="/ayudanos">Ayúdanos</a>
+                    <a href="/contacto">Contacto</a>
                 </div>
                 <div class="footer-social">
                     <a href="#"><i class="bi bi-facebook"></i></a>

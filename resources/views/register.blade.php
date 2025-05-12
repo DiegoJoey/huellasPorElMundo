@@ -7,46 +7,46 @@
 @section('content')
     <div class="center-wrapper">
         <form class="form">
-            <p class="text-register">Register!</p>
+            <p class="text-register">¡Regístrate!</p>
 
             <div class="flex-column">
-                <label>First name</label>
+                <label>Nombre</label>
             </div>
             <div class="inputForm">
-                <input placeholder="First name" class="input" type="text">
-            </div>
-
-            <div class="flex-column">
-                <label>Last name</label>
-            </div>
-            <div class="inputForm">
-                <input placeholder="Last name" class="input" type="text">
+                <input placeholder="Nombre" class="input" type="text">
             </div>
 
             <div class="flex-column">
-                <label>Email</label>
+                <label>Apellido</label>
             </div>
             <div class="inputForm">
-                <input placeholder="Email" class="input" type="text">
+                <input placeholder="Apellido" class="input" type="text">
             </div>
 
             <div class="flex-column">
-                <label>Password</label>
+                <label>Correo electrónico</label>
             </div>
             <div class="inputForm">
-                <input placeholder="Password" class="input" type="password">
+                <input placeholder="Correo electrónico" class="input" type="text">
             </div>
 
             <div class="flex-column">
-                <label>Repeat password</label>
+                <label>Contraseña</label>
             </div>
             <div class="inputForm">
-                <input placeholder="Repeat password" class="input" type="password">
+                <input placeholder="Contraseña" class="input" type="password">
             </div>
 
-            <button class="button-submit">Register</button>
+            <div class="flex-column">
+                <label>Repetir contraseña</label>
+            </div>
+            <div class="inputForm">
+                <input placeholder="Repetir contraseña" class="input" type="password">
+            </div>
+
+            <button class="button-submit">Registrarse</button>
   
-            <p class="p">Already have an account? <span class="span">Sign In</span></p>
+            <p class="p">¿Ya tienes una cuenta? <a href="/login"><span class="span">Inicia sesión</span></a> </p>
         </form>
     </div>
     

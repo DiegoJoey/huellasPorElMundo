@@ -7,44 +7,44 @@
 @section('content')
 <div class="center-wrapper">
     <form class="form">
-      <p class="contact">Contact us!</p>
+      <p class="contact">¡Contáctanos!</p>
   
       <div class="flex-column">
-        <label>First name</label>
+        <label>Nombre</label>
       </div>
       <div class="inputForm">
-        <input placeholder="First name" class="input" type="text">
-      </div>
-  
-      <div class="flex-column">
-        <label>Last name</label>
-      </div>
-      <div class="inputForm">
-        <input placeholder="Last name" class="input" type="text">
+        <input placeholder="Nombre" class="input" type="text">
       </div>
   
       <div class="flex-column">
-        <label>Email</label>
+        <label>Apellido</label>
       </div>
       <div class="inputForm">
-        <input placeholder="Email" class="input" type="text">
+        <input placeholder="Apellido" class="input" type="text">
       </div>
   
       <div class="flex-column">
-        <label>Phone number</label>
+        <label>Correo electrónico</label>
       </div>
       <div class="inputForm">
-        <input placeholder="Phone number" class="input" type="text">
+        <input placeholder="Correo electrónico" class="input" type="text">
       </div>
   
       <div class="flex-column">
-        <label>Message</label>
+        <label>Número de teléfono</label>
       </div>
       <div class="inputForm">
-        <textarea placeholder="Message" class="input text"></textarea>
+        <input placeholder="Número de teléfono" class="input" type="text">
       </div>
   
-      <button class="button-submit">Send</button>
+      <div class="flex-column">
+        <label>Mensaje</label>
+      </div>
+      <div class="inputForm">
+        <textarea placeholder="Escribe tu mensaje aquí" class="input text"></textarea>
+      </div>
+  
+      <button class="button-submit">Enviar</button>
     </form>
   </div>
   

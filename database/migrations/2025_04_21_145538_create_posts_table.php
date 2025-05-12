@@ -16,8 +16,8 @@ return new class extends Migration
             $table->string('title');
             $table->text('content');
             $table->foreignId('user_id')->constrained('users'); // Relación con 'users'
-            $table->foreignId('animal_id')->nullable()->constrained('animals'); // Relación con 'animals'
-            $table->string('image_path')->nullable();
+            $table->foreignId('animal_id')->constrained('animals'); // Relación con 'animals'
+            $table->string('image_path');
             $table->timestamps();
         });
     }

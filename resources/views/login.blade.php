@@ -7,9 +7,9 @@
 @section('content')
     <div class="center-wrapper">
         <form class="form">
-            <p class="text-login">Login</p>
+            <p class="text-login">Iniciar sesión</p>
             <div class="flex-column">
-                <label>Email </label>
+                <label>Correo electronico </label>
             </div>
             <div class="inputForm">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" viewBox="0 0 32 32" height="20">
@@ -19,11 +19,11 @@
                         </path>
                     </g>
                 </svg>
-                <input placeholder="Enter your Email" class="input" type="text">
+                <input placeholder="Introducir Correo electronico" class="input" type="text">
             </div>
 
             <div class="flex-column">
-                <label>Password </label>
+                <label>Contraseña </label>
             </div>
             <div class="inputForm">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" viewBox="-64 0 512 512" height="20">
@@ -34,20 +34,15 @@
                         d="m304 224c-8.832031 0-16-7.167969-16-16v-80c0-52.929688-43.070312-96-96-96s-96 43.070312-96 96v80c0 8.832031-7.167969 16-16 16s-16-7.167969-16-16v-80c0-70.59375 57.40625-128 128-128s128 57.40625 128 128v80c0 8.832031-7.167969 16-16 16zm0 0">
                     </path>
                 </svg>
-                <input placeholder="Enter your Password" class="input" type="password">
+                <input placeholder="Introducir Contraseña" class="input" type="password">
             </div>
 
             <div class="flex-row">
-                <div>
-                    <label>
-                        <input type="checkbox" name="rememberMe">
-                        Remember me
-                    </label>
-                </div>
-                <span class="span">Forgot password?</span>
+                
+                <span class="span">olvidaste Contraseña?</span>
             </div>
-            <button class="button-submit">Sign In</button>
-            <p class="p">Don't have an account? <span class="span">Sign Up</span>
+            <button class="button-submit">Iniciar sesión</button>
+            <p class="p">No tienes cuenta? <a href="/register"><span class="span">Registrate</span></a> </p>
         </form>
     </div>
 @endsection

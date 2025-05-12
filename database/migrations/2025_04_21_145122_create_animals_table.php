@@ -17,9 +17,9 @@ return new class extends Migration
             $table->string('type');
             $table->string('breed');
             $table->integer('age');
-            $table->integer('time_in_shelter');
+            $table->string('time_in_shelter');
             $table->text('description');
-            $table->string('image_path')->nullable();
+            $table->string('image_path');
             $table->foreignId('created_by')->constrained('users'); // Relación con 'users'
             $table->timestamps();
         });

@@ -13,8 +13,8 @@ return new class extends Migration
     {
         Schema::create('donations', function (Blueprint $table) {
             $table->id();
-        $table->foreignId('user_id')->nullable()->constrained('users'); // Relación con 'users'
-        $table->decimal('amount', 8, 2);
+        $table->foreignId('user_id')->constrained('users'); // Relación con 'users'
+        $table->float('amount');
         $table->enum('category', ['Alimentos', 'Juguetes', 'Comodidad']);
         $table->text('message')->nullable();
         $table->timestamps();
