@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     console.log('JavaScript loaded and running!');
 
-    const passwordInput = document.querySelector('input[placeholder="Password"]');
+    const passwordInput = document.querySelector('input[placeholder="Contraseña"]');
     if (!passwordInput) {
         console.error('Password input field not found!');
         return;
@@ -18,19 +18,19 @@ document.addEventListener('DOMContentLoaded', () => {
         const errors = [];
 
         if (password.length < 8) {
-            errors.push('Password must be at least 8 characters long.');
+            errors.push('Contraseña debe tener minimo 8 caracteres.');
         }
         if (!/[A-Z]/.test(password)) {
-            errors.push('Password must include at least one uppercase letter.');
+            errors.push('Contraseña debe contener minimo 1 mayuscula.');
         }
         if (!/[a-z]/.test(password)) {
-            errors.push('Password must include at least one lowercase letter.');
+            errors.push('Contraseña debe contener minimo 1 minuscula.');
         }
         if (!/[0-9]/.test(password)) {
-            errors.push('Password must include at least one number.');
+            errors.push('Contraseña debe contener minimo 1 numero.');
         }
         if (!/[!@#$%^&*(),.?":{}|<>]/.test(password)) {
-            errors.push('Password must include at least one special character.');
+            errors.push('Contraseña debe contener minimo 1 caracter especial.');
         }
 
         errorContainer.innerHTML = errors.map(error => `<p>${error}</p>`).join('');

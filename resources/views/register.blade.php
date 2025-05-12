@@ -44,7 +44,7 @@
                 <input placeholder="Repetir contraseña" class="input" type="password">
             </div>
 
-            <button class="button-submit">Registrarse</button>
+            <a href="/user/create"><button class="button-submit">Registrarse</button></a>
   
             <p class="p">¿Ya tienes una cuenta? <a href="/login"><span class="span">Inicia sesión</span></a> </p>
         </form>
