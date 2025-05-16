@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserController;
 
 
 Route::get('/', function () {
@@ -30,3 +31,5 @@ Route::get('/login', function () {
 Route::get('/register', function () {
     return view('register');
 });
+
+Route::post('/user/create', [UserController::class, 'store']);
