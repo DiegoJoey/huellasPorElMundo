@@ -38,13 +38,6 @@
                 <input name="password" placeholder="Contraseña" class="input" type="password">
             </div>
 
-            <div class="flex-column">
-                <label>Repetir contraseña</label>
-            </div>
-            <div class="inputForm">
-                <input name="password_confirmation" placeholder="Repetir contraseña" class="input" type="password">
-            </div>
-
             <button class="button-submit">Registrarse</button>
   
             <p class="p">¿Ya tienes una cuenta? <a href="/login"><span class="span">Inicia sesión</span></a> </p>

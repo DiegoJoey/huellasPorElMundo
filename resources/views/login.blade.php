@@ -6,7 +6,8 @@
 
 @section('content')
     <div class="center-wrapper">
-        <form class="form">
+        <form class="form" method="POST" action="/loginn">
+            @csrf
             <p class="text-login">Iniciar sesión</p>
             <div class="flex-column">
                 <label>Correo electronico </label>
@@ -19,7 +20,7 @@
                         </path>
                     </g>
                 </svg>
-                <input placeholder="Introducir Correo electronico" class="input" type="text">
+                <input placeholder="Introducir Correo electronico" class="input" type="text" name="email">
             </div>
 
             <div class="flex-column">
@@ -34,7 +35,7 @@
                         d="m304 224c-8.832031 0-16-7.167969-16-16v-80c0-52.929688-43.070312-96-96-96s-96 43.070312-96 96v80c0 8.832031-7.167969 16-16 16s-16-7.167969-16-16v-80c0-70.59375 57.40625-128 128-128s128 57.40625 128 128v80c0 8.832031-7.167969 16-16 16zm0 0">
                     </path>
                 </svg>
-                <input placeholder="Introducir Contraseña" class="input" type="password">
+                <input placeholder="Introducir Contraseña" class="input" type="password" name="password">
             </div>
 
             <div class="flex-row">

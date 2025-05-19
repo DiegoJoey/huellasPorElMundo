@@ -8,7 +8,7 @@ use App\Models\Post;
 
 class Animal extends Model
 {
-    protected $fillable = ['name', 'type', 'breed', 'age', 'time_in_shelter', 'description', 'image_path', 'created_by'];
+    protected $fillable = ['name', 'type', 'breed', 'age', 'time_in_shelter', 'description', 'image_path', 'state'];
 
     public function user()
     {

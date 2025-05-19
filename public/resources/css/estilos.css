@@ -272,3 +272,21 @@ a {
     color: #bdc3c7; /* Subtle text color */
     margin-top: 1rem;
 }
+
+.base-main{
+  display: grid;
+  min-height: 100dvh;
+  grid-template-rows: auto 1fr auto;
+}
+
+.box.post {
+    transition: transform 0.3s cubic-bezier(0.4, 0.2, 0.2, 1), box-shadow 0.3s;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    cursor: pointer;
+}
+
+.box.post:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.16);
+    z-index: 2;
+}

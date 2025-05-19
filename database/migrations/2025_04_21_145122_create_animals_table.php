@@ -20,7 +20,8 @@ return new class extends Migration
             $table->string('time_in_shelter');
             $table->text('description');
             $table->string('image_path');
-            $table->foreignId('created_by')->constrained('users'); // Relación con 'users'
+            $table->enum('state', ['shelter', 'adopted'])->default('shelter');
+            //$table->foreignId('created_by')->constrained('users'); // Relación con 'users'
             $table->timestamps();
         });
     }
