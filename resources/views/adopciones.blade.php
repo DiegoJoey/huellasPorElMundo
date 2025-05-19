@@ -35,13 +35,22 @@
                                     </button>
                                 </form>
                             @endif
-                            <form action="/adoptar/{{ $animal->id }}" method="GET" style="display:inline;">
-                                @csrf
-                                <button type="submit" title="Adoptar"
-                                    class="btn btn-success btn-sm d-inline-flex align-items-center butn">
+                            @auth
+                                <form action="/adoptar/{{ $animal->id }}" method="GET" style="display:inline;">
+                                    @csrf
+                                    
+                                    <button type="submit" title="Adoptar"
+                                        class="btn btn-success btn-sm d-inline-flex align-items-center butn">
+                                        <i class="bi bi-heart-fill me-1"></i> ¡Adóptame!
+                                    </button>
+                                </form>
+                            @endauth
+                            @guest
+                                <a href="/login" class="btn btn-success btn-sm d-inline-flex align-items-center butn"
+                                    title="Inicia sesión para adoptar">
                                     <i class="bi bi-heart-fill me-1"></i> ¡Adóptame!
-                                </button>
-                            </form>
+                                </a>
+                            @endguest
                         </div>
                     </div>
                 </div>

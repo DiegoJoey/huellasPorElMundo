@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\AnimalController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\DonationController;
 use Illuminate\Support\Facades\Auth;
 
 
@@ -48,6 +49,11 @@ Route::post('/destroy/{id}', [AnimalController::class, 'destroy']);
 Route::get('/adoptar/{id}', [AnimalController::class, 'showAdoptarForm'])->name('adoptar.form');
 
 Route::post('/adoptar/{id}', [AnimalController::class, 'adoptar'])->name('adoptar.update');
+
+
+Route::get('/donar/alimentos/{id}', [DonationController::class, 'alimentos']);
+Route::post('/donar/alimentos', [DonationController::class, 'donarAlimentos']);
+
 
 Route::post('/logout', function () {
     Auth::logout();
