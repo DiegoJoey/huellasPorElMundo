@@ -7,7 +7,7 @@ use App\Models\User;
 
 class Donation extends Model
 {
-    protected $fillable = ['user_id', 'amount', 'category', 'message'];
+    protected $fillable = ['user_id', 'amount', 'category', 'message', 'items'];
 
     public function user()
     {

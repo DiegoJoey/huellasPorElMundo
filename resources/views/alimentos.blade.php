@@ -15,7 +15,7 @@
 
         <div class="mb-3">
             <label for="item" class="form-label">¿Qué alimentos quieres donar?</label>
-            <textarea class="form-control" id="item" name="item" rows="3" maxlength="255"></textarea>
+            <textarea class="form-control" id="items" name="items" rows="3" maxlength="255"></textarea>
         </div>
 
         <div class="mb-3">

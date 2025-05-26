@@ -18,12 +18,11 @@ class DonationController extends Controller
             $validated = $request->validate([
                 'user_id' => 'required|int',
                 'category' => 'required|string|max:255',
-                'item' => 'required|string|max:255',
+                'items' => 'required|string|max:255',
                 'message' => 'nullable|string',
             ]);
 
             Donation::create($validated);
-
             return redirect('/');
         } catch (\Exception $e) {
             Log::channel('api')->info('Error: ' . $e->getMessage());
@@ -35,5 +34,49 @@ class DonationController extends Controller
 
         $user = User::findOrFail($userId);
         return view('alimentos', compact('user'));
+    }
+
+    public function donarJuguetes(Request $request){
+        try {
+            $validated = $request->validate([
+                'user_id' => 'required|int',
+                'category' => 'required|string|max:255',
+                'items' => 'required|string|max:255',
+                'amount' => 'required|numeric',
+                'message' => 'nullable|string',
+            ]);
+
+            Donation::create($validated);
+            return redirect('/');
+        } catch (\Exception $e) {
+            Log::channel('api')->info('Error: ' . $e->getMessage());
+        }
+    }
+
+    public function juguetes($userId){
+        $user = User::findOrFail($userId);
+        return view('juguetes', compact('user'));
+    }
+
+    public function donarComodidad(Request $request){
+        try {
+            $validated = $request->validate([
+                'user_id' => 'required|int',
+                'category' => 'required|string|max:255',
+                'items' => 'required|string|max:255',
+                'amount' => 'required|numeric',
+                'message' => 'nullable|string',
+            ]);
+
+            Donation::create($validated);
+            return redirect('/');
+        } catch (\Exception $e) {
+            Log::channel('api')->info('Error: ' . $e->getMessage());
+        }
+    }
+
+    public function comodidad($userId){
+        $user = User::findOrFail($userId);
+        return view('comodidad', compact('user'));
     }
 }

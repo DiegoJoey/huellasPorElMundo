@@ -54,6 +54,14 @@ Route::post('/adoptar/{id}', [AnimalController::class, 'adoptar'])->name('adopta
 Route::get('/donar/alimentos/{id}', [DonationController::class, 'alimentos']);
 Route::post('/donar/alimentos', [DonationController::class, 'donarAlimentos']);
 
+Route::get('/donar/juguetes/{id}', [DonationController::class, 'juguetes']);
+Route::post('/donar/juguetes', [DonationController::class, 'donarJuguetes']);
+
+Route::get('/donar/comodidad/{id}', [DonationController::class, 'comodidad']);
+Route::post('/donar/comodidad', [DonationController::class, 'donarComodidad']);
+
+
+
 
 Route::post('/logout', function () {
     Auth::logout();
