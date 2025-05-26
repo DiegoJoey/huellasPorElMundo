@@ -1,5 +1,4 @@
 .ayudanos {
-    background-color: #f8f9fa;
     padding: 3rem 2rem;
     text-align: center;
 }
@@ -31,6 +30,7 @@
     text-align: center;
     flex: 1 1 calc(50% - 1.5rem); /* 2 columnas */
     max-width: calc(50% - 1.5rem);
+    transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .donation-category h3 {
@@ -42,6 +42,10 @@
     font-size: 1rem;
     color: #666;
     margin: 1rem 0;
+}
+
+.donation-category:hover{
+    transform: scale(1.05);
 }
 
 
@@ -61,6 +65,7 @@
     font-weight: bold;
     text-decoration: none;
     transition: background 0.3s ease;
+    
 }
 
 .button:hover {
@@ -80,4 +85,9 @@
     font-size: 1rem;
     color: #555;
     margin-bottom: 1rem;
+}
+
+.food{
+    width: 10%;
+    height: auto;
 }

@@ -57,6 +57,12 @@ return [
             'channels' => explode(',', env('LOG_STACK', 'single')),
             'ignore_exceptions' => false,
         ],
+        'api' => [
+            'driver' => 'daily',
+            'path' => storage_path('logs/api.log'),
+            'level' => 'info',
+            'days' => 14,
+        ],
 
         'single' => [
             'driver' => 'single',

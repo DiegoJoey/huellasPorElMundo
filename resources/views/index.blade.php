@@ -19,7 +19,7 @@
             <div class="row">
                 <section class="col-6 col-12-narrower">
                     <div class="box post">
-                        <a href="#" class="image left"><img src="{{ asset('resources/img/main-01.jpg') }}" alt /></a>
+                        <a href="/adopciones" class="image left"><img src="{{ asset('resources/img/main-01.jpg') }}" alt /></a>
                         <div class="inner">
                             <h3>Adopta un amigo</h3>
                             <p>Descubre cómo puedes cambiar la vida de un animal rescatado al darle un hogar lleno de amor.
@@ -29,7 +29,7 @@
                 </section>
                 <section class="col-6 col-12-narrower">
                     <div class="box post">
-                        <a href="#" class="image left"><img src="{{ asset('resources/img/main-02.jpg') }}" alt /></a>
+                        <a href="/sobreNosotros" class="image left"><img src="{{ asset('resources/img/main-02.jpg') }}" alt /></a>
                         <div class="inner">
                             <h3>Conoce nuestra misión</h3>
                             <p>Trabajamos para rescatar, proteger y encontrar hogares para animales en situación de riesgo.
@@ -38,10 +38,11 @@
                     </div>
                 </section>
             </div>
+            <br><br>
             <div class="row">
                 <section class="col-6 col-12-narrower">
                     <div class="box post">
-                        <a href="#" class="image left"><img src="{{ asset('resources/img/main-03.jpg') }}" alt /></a>
+                        <a href="/ayudanos" class="image left"><img src="{{ asset('resources/img/main-03.jpg') }}" alt /></a>
                         <div class="inner">
                             <h3>Únete como voluntario</h3>
                             <p>Forma parte de nuestro equipo y ayúdanos a marcar la diferencia en la vida de los animales.
@@ -51,7 +52,7 @@
                 </section>
                 <section class="col-6 col-12-narrower">
                     <div class="box post">
-                        <a href="#" class="image left"><img src="{{ asset('resources/img/main-04.jpg') }}" alt /></a>
+                        <a href="/ayudanos" class="image left"><img src="{{ asset('resources/img/main-04.jpg') }}" alt /></a>
                         <div class="inner">
                             <h3>Apoya con tu donación</h3>
                             <p>Tu ayuda es fundamental para continuar con nuestra labor de rescate y cuidado animal.</p>
