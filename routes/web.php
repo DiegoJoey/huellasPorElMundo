@@ -36,13 +36,11 @@ Route::get('/register', function () {
     return view('register');
 });
 
-Route::get('/post', function(){
-    return view('formularioPublicar');
-});
+Route::get('/post', [AnimalController::class, 'showFormularioPublicar']);
 
 Route::post('/user/create', [UserController::class, 'store']);
 
-Route::post('/post/animal', [AnimalController::class, 'store']);
+Route::post('/post/animal', [AnimalController::class, ['store']]);
 
 Route::post('/destroy/{id}', [AnimalController::class, 'destroy']);
 

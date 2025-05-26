@@ -17,6 +17,10 @@ return [
     'postmark' => [
         'token' => env('POSTMARK_TOKEN'),
     ],
+    'petfinder' => [
+        'client_id' => env('PETFINDER_CLIENT_ID'),
+        'client_secret' => env('PETFINDER_CLIENT_SECRET'),
+    ],
 
     'ses' => [
         'key' => env('AWS_ACCESS_KEY_ID'),

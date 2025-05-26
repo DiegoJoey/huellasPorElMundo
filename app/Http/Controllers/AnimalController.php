@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use \App\Models\Animal;
 use Illuminate\Support\Facades\Log;
+use App\Services\PetfinderService;
 
 class AnimalController extends Controller
 {
@@ -51,6 +52,15 @@ class AnimalController extends Controller
         }
     }
 
+    public function showFormularioPublicar(PetfinderService $petfinderService)
+    {
+        $type = 'dog'; // or get from request/user selection
+        $breedsResponse = $petfinderService->getBreeds($type);
+        $breeds = $breedsResponse['breeds'] ?? [];
+
+        return view('formularioPublicar', compact('breeds'));
+    }
+
     public function adoptar(Request $request)
     {
 
@@ -70,7 +80,6 @@ class AnimalController extends Controller
 
 
         return redirect('/');
-        
     }
 
     public function showAdoptarForm($id)
