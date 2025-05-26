@@ -26,4 +26,9 @@
         <button type="submit" class="btn btn-warning">Donar</button>
     </form>
 </div>
+<br><br>
 @endsection
+
+@push('scripts')
+    <script src="{{ asset('resources/js/alimentos-form-validation.js') }}"></script>
+@endpush

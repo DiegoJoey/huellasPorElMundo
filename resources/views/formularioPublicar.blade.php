@@ -54,4 +54,10 @@
             <button type="submit" class="btn btn-primary">Publicar</button>
         </form>
     </div>
+    <br>
+    <br>
 @endsection
+
+@push('scripts')
+    <script src="{{ asset('resources/js/formulario-publicar-validation.js') }}"></script>
+@endpush

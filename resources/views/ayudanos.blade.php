@@ -15,8 +15,8 @@
                     <p>Ayuda a alimentar a nuestros peludos con comida de calidad.</p>
                     <img src="{{ asset('resources/img/food.png') }} " class="food">
                     @auth
-                    
-                        <a href="/donar/alimentos/{{auth()->user()->id}}" class="button">Donar</a>
+
+                        <a href="/donar/alimentos/{{ auth()->user()->id }}" class="button">Donar</a>
                     @endauth
                     @guest
                         <a href="/login" class="button">Donar</a>
@@ -28,7 +28,7 @@
                     <p>Aporta juguetes para que los animales jueguen y se diviertan.</p>
                     <img src="{{ asset('resources/img/toy1.png') }} " class="food">
                     @auth
-                        <a href="/donar/juguetes/{{auth()->user()->id}}" class="button">Donar</a>
+                        <a href="/donar/juguetes/{{ auth()->user()->id }}" class="button">Donar</a>
                     @endauth
                     @guest
                         <a href="/login" class="button">Donar</a>
@@ -40,7 +40,7 @@
                     <p>Colabora con camas, mantas y accesorios para su bienestar.</p>
                     <img src="{{ asset('resources/img/bed.png') }} " class="food">
                     @auth
-                        <a href="/donar/comodidad/{{auth()->user()->id}}" class="button">Donar</a>
+                        <a href="/donar/comodidad/{{ auth()->user()->id }}" class="button">Donar</a>
                     @endauth
                     @guest
                         <a href="/login" class="button">Donar</a>
@@ -51,12 +51,9 @@
                     <h3>¿Quieres ser voluntario?</h3>
                     <p>Únete a nuestro equipo y ayuda directamente a los animales.</p>
                     <img src="{{ asset('resources/img/hands.png') }} " class="food">
-                    @auth
-                        <a href="/voluntario/{{auth()->user()->id}}" class="button">¡Apúntate!</a>
-                    @endauth
-                    @guest
-                        <a href="/login" class="button">¡Apúntate!</a>
-                    @endguest
+
+                    <a href="/volunteer" class="button">¡Apúntate!</a>
+
                     <img src="{{ asset('resources/img/volunteer.png') }} " class="food">
                 </div>
             </div>

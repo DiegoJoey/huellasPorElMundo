@@ -5,6 +5,7 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\AnimalController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\DonationController;
+use App\Http\Controllers\VolunteerController;
 use Illuminate\Support\Facades\Auth;
 
 
@@ -20,7 +21,7 @@ Route::get('/ayudanos', function () {
     return view('ayudanos');
 });
 
-Route::get('/adopciones',[AnimalController::class, 'index']);
+Route::get('/adopciones', [AnimalController::class, 'index']);
 
 Route::get('/contacto', function () {
     return view('contacto');
@@ -40,7 +41,7 @@ Route::get('/post', [AnimalController::class, 'showFormularioPublicar']);
 
 Route::post('/user/create', [UserController::class, 'store']);
 
-Route::post('/post/animal', [AnimalController::class, ['store']]);
+Route::post('/post/animal', [AnimalController::class, 'store']);
 
 Route::post('/destroy/{id}', [AnimalController::class, 'destroy']);
 
@@ -58,6 +59,12 @@ Route::post('/donar/juguetes', [DonationController::class, 'donarJuguetes']);
 Route::get('/donar/comodidad/{id}', [DonationController::class, 'comodidad']);
 Route::post('/donar/comodidad', [DonationController::class, 'donarComodidad']);
 
+
+Route::get('/volunteer', function () {
+    return view('volunteer');
+});
+
+Route::post('/volunteer/store', [VolunteerController::class, 'store']);
 
 
 
